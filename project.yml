@@ -1,0 +1,38 @@
+name: AHYTestApp
+options:
+  bundleIdPrefix: com.ahy
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+targets:
+  AHYTestApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: AHYTestApp
+    info:
+      path: Generated-Info.plist
+      properties:
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ahy.testapp
+        PRODUCT_NAME: "A Himalayan Yogi"
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+schemes:
+  AHYTestApp:
+    build:
+      targets:
+        AHYTestApp: all
+    run:
+      config: Debug
+    archive:
+      config: Release
